@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Projects</h1>
+
+<div class="projects-section">
+
+    <!-- TITAN Project -->
+    <div class="project-card">
+        <h2>TITAN – E-commerce Web Application (Django)</h2>
+        <p class="project-desc">
+            A full-stack e-commerce platform built using Django with end-to-end features such as
+            user authentication, product management, shopping cart, and order processing.
+            Designed using clean architecture and modular Django apps.
+        </p>
+
+        <div class="tech-tags">
+            <span>Django</span>
+            <span>Python</span>
+            <span>#</span>
+            <span>#</span>
+            <span>#</span>
+        </div>
+
+        <ul class="project-points">
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+        </ul>
+
+        <div class="project-links">
+            <a href="#" class="btn small">GitHub</a>
+            <a href="#" class="btn small">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Virtual Assistant -->
+    <div class="project-card">
+        <h2>AI Virtual Assistant (Python + OpenAI)</h2>
+        <p class="project-desc">
+            A multi-purpose virtual assistant capable of speech recognition,
+            answering queries using the OpenAI API, automating tasks and opening apps. Designed for productivity and hands-free interaction.
+        </p>
+
+        <div class="tech-tags">
+            <span>Python</span>
+            <span>SpeechRecognition</span>
+            <span>OpenAI API</span>
+            <span>#</span>
+            <span>#</span>
+            <span>#</span>
+            <span>#</span>
+        </div>
+
+        <ul class="project-points">
+            <li>Integrated OpenAI GPT models to enable conversational responses.</li>
+            <li>Added voice commands using speech-to-text processing ###.</li>
+            <li>Created automation actions (open apps, play music).</li>
+        </ul>
+
+        <div class="project-links">
+            <a href="#" class="btn small">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Smart Stick -->
+    <div class="project-card">
+        <h2>Smart Stick for the Visually Impaired</h2>
+        <p class="project-desc">
+            A hardware-based assistive device that uses ultrasonic sensors to detect obstacles
+            and alert users through buzzer signals, improving safety and mobility for visually impaired individuals.
+        </p>
+
+        <div class="tech-tags">
+            <span>Ultrasonic Sensor</span>
+            <span>Soil-Moisture Sensor</span>
+            <span>Arduino UNO</span>
+        </div>
+
+        <ul class="project-points">
+            <li>Programmed real-time distance measurement by setting a threshold of 30cms and obstacle detection.</li>
+            <li>Designed buzzer-based warning signals.</li>
+            <li>Conducted testing to ensure accurate detection range.</li>
+        </ul>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="home-container">
+
+    <!-- LEFT SECTION -->
+    <div class="home-text">
+        <h1>Hi, I'm Aditya <span class="wave">👋</span></h1>
+
+        <p class="subtitle">
+            Backend Developer — FastAPI | Django | Elasticsearch | Docker
+        </p>
+
+        <p class="description">
+            I build scalable backend systems, modern APIs using Python, FastAPI, Django, and Elasticsearch.  
+            Passionate about performance, clean architecture, and production-grade applications.
+        </p>
+
+        <div class="button-row">
+            <a class="btn" href="/projects"> View Projects</a>
+            <a class="btn" href="/resume"> Resume</a>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Django</span>
+            <span>Elasticsearch</span>
+            <span>Docker</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SECTION — YOUR PHOTO -->
+    <div class="home-photo">
+        <img src="/static/me.jpg" alt="Aditya Photo">
+    </div>
+</div>
+
+<!-- ABOUT PREVIEW -->
+<div class="about-preview">
+    <h2>What I Do</h2>
+    <p>
+        I specialize in backend development, focusing on building fast, reliable,
+        and scalable systems. I enjoy designing clean API architectures, having an experience of working with
+        search engines like Elasticsearch, and deploying containerized applications with Docker.
+    </p>
+</div>
+
+<!-- QUICK STATS -->
+<div class="quick-stats">
+    <div class="stat-box">
+        <h3>5 Months</h3>
+        <p>Industry Experience</p>
+    </div>
+    <div class="stat-box">
+        <h3>3 Internships</h3>
+        <p>Backend & Python Roles</p>
+    </div>
+</div>
+
+{% endblock %}

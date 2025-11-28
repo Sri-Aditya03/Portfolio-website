@@ -1,0 +1,421 @@
+/* ============================================================
+   GLOBAL
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #0d1024, #080a15 80%);
+    color: #eef1ff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px 0;
+    background: rgba(18, 20, 45, 0.45);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar a {
+    color: #9cb7ff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #7c8cff;
+}
+
+/* ============================================================
+   CONTACT SECTION
+============================================================ */
+
+.contact-section {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #cbd5f3;
+}
+
+.contact-section a {
+    color: #9cb7ff;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+.contact-section a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #7c8cff;
+}
+
+
+
+/* ============================================================
+   HERO SECTION
+============================================================ */
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.home-text {
+    flex: 1.4;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #d9ddff;
+    line-height: 1.25;
+    text-shadow: 0 0 25px rgba(160, 170, 255, 0.25);
+}
+
+.wave {
+    display: inline-block;
+    animation: waveAnim 1.8s infinite;
+}
+
+@keyframes waveAnim {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-12deg); }
+    60% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: #a8b7ff;
+}
+
+.description {
+    margin-top: 18px;
+    color: #c2c9e8;
+    font-size: 1.08rem;
+    line-height: 1.65rem;
+}
+
+.button-row {
+    margin-top: 28px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #5466ff, #7b8cff);
+    color: white;
+    font-weight: 500;
+    margin-right: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 18px rgba(98, 120, 255, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 28px rgba(120, 140, 255, 0.55);
+}
+
+/* Hero Photo */
+.hero-photo img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(110, 130, 255, 0.45);
+}
+
+
+
+/* ============================================================
+   TECH STACK
+============================================================ */
+
+.tech-stack {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-stack span {
+    padding: 7px 16px;
+    background: rgba(120, 135, 255, 0.18);
+    border-radius: 12px;
+    border: 1px solid rgba(130, 150, 255, 0.25);
+    color: #cdd7ff;
+    font-size: 0.86rem;
+}
+
+
+
+/* ============================================================
+   ABOUT PAGE
+============================================================ */
+
+.about-section {
+    margin-top: 20px;
+    color: #cbd3f1;
+    line-height: 1.75rem;
+    font-size: 1.08rem;
+}
+
+.about-section h2 {
+    margin-top: 45px;
+    font-size: 1.8rem;
+    color: #dbe1ff;
+}
+
+.about-list {
+    margin-top: 12px;
+    list-style: none;
+}
+
+.about-list li {
+    padding-left: 22px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #b5bcda;
+}
+
+.about-list li::before {
+    content: "✔";
+    color: #7c8dff;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+
+
+/* ============================================================
+   EXPERIENCE PAGE
+============================================================ */
+
+.experience-section {
+    margin-top: 20px;
+}
+
+.experience-section h2 {
+    margin-top: 40px;
+    color: #dbe3ff;
+    font-size: 1.55rem;
+}
+
+.xp-desc {
+    margin-top: 10px;
+    color: #b6bdd7;
+    line-height: 1.7rem;
+}
+
+.xp-list {
+    margin-top: 14px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.xp-list li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #cdd2eb;
+}
+
+.xp-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7c8cff;
+    font-size: 1.4rem;
+}
+
+
+
+/* ============================================================
+   QUICK STATS
+============================================================ */
+
+.quick-stats {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.stat-box {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    transition: 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 28px rgba(120, 140, 255, 0.4);
+}
+
+.stat-box h3 {
+    font-size: 2.1rem;
+    color: #e5eaff;
+}
+
+.stat-box p {
+    margin-top: 6px;
+    color: #9fa7c6;
+}
+
+
+
+/* ============================================================
+   PROJECTS PAGE (Cards)
+============================================================ */
+
+.projects-section {
+    margin-top: 35px;
+}
+
+.project-card {
+    padding: 30px;
+    margin-bottom: 45px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 25px rgba(120, 135, 255, 0.28);
+    transition: 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 40px rgba(150, 160, 255, 0.45);
+}
+
+.project-card h2 {
+    color: #dee3ff;
+    font-size: 1.7rem;
+}
+
+.project-desc {
+    margin-top: 12px;
+    color: #c1c7e6;
+    line-height: 1.65rem;
+}
+
+.project-points {
+    margin-top: 18px;
+    padding-left: 20px;
+}
+
+.project-points li {
+    margin-bottom: 10px;
+    color: #d6dbf5;
+    line-height: 1.55rem;
+}
+
+.project-links {
+    margin-top: 22px;
+}
+
+.btn.small {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+}
+
+
+
+/* ============================================================
+   RESUME PAGE
+============================================================ */
+
+.resume-box {
+    padding: 40px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 30px rgba(140, 150, 255, 0.28);
+    text-align: center;
+}
+
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 900px) {
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-photo img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .quick-stats {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
